@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+<h1 align="center" style="font-family: 'Gloria Hallelujah', cursive;">Make a Post</h1>
+
+<form method="POST">
+    <textarea name="text" id="text" class="form-control"></textarea>
+    <br/>
+    <div align="center">
+        <button type="submit" class="btn btn-success">Post</button>
+    </div>
+
+</form>
+<br/>
+<div align="center">
+    <a href="/home"><button type="submit" class="btn btn-secondary">Back</button></a>
+</div>
+{% endblock %}

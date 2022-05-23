@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<form method="POST" style="font-family: 'Patrick Hand', cursive;">
+    <h3 align="center" style="font-weight: bolder;" >Sign Up</h3>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email"/>
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username"/>
+        <label for="password">Password</label>
+        <input type="password" id="password1" name="password1" class="form-control" placeholder="Enter Password"/>
+        <label for="password">Password Again</label>
+        <input type="password" id="password2" name="password2" class="form-control" placeholder="Enter Password Again"/>
+        <br/>
+        <div align="center">
+            <button type="submit" class="btn btn-outline-primary">Sign Up</button>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
